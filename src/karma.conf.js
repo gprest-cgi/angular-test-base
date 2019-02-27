@@ -21,7 +21,7 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
-    reporters: ['junit'],
+    reporters: ['progress', 'kjhtml', 'junit'],
     junitReporter: {
       outputFile: 'test-results.xml',
       useBrowserName: false
