@@ -19,10 +19,10 @@ describe('OtherComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should render title in a h1 tag', () => {
+  it('should render title in a h2 tag', () => {
     fixture = TestBed.createComponent(OtherComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('other component works!');
+    expect(compiled.querySelector('h2').textContent).toContain('other component almost works!');
   });
 });

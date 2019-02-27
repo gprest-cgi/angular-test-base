@@ -6,22 +6,21 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent,
-        OtherComponent
+        AppComponent
       ],
     }).compileComponents();
   }));
 
-  it('should render title in a h1 tag', () => {
+  it('should render title in a h2 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to FIX-TEST!');
+    expect(compiled.querySelector('h2').textContent).toContain('Welcome to FIX-TEST!');
   });
 
-  it(`should have as title 'FIX-TEST'`, () => {
+  it(`should have as title 'FIX-TE5T'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('FIX-TEST');
+    expect(app.title).toEqual('FIX-TE5T');
   });
 });
